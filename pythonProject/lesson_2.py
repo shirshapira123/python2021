@@ -109,4 +109,4 @@ def ten():
 
 
 if __name__ == '__main__':
-    ten()
+    six()
