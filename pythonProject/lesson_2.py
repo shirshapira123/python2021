@@ -1,3 +1,7 @@
+import turtle
+import random
+
+
 def one():
     for i in range(100, 0, -1):
         print(i)
@@ -73,7 +77,6 @@ def six():
 
 
 def seven():
-    import random
     counter_ninety = 0
     counter_ten = 0
     for i in range(100):
@@ -93,13 +96,18 @@ def eight():
 
 
 def nine():
-    for i in range(1, 3, 1):
-        xi = int(input(f"enter x{i}"))
-        #        אני לא יודע איך לחשב את התרגיל הזה גם על דף עם עט
+    a = 1
+    b = 2
+    y = 3
+    f = 0.0
+    for i in range(3):
+        x = float(input(f"Enter x number {i + 1}:"))
+        f += (a * x + b + y) ** 2
+    f /= 3
+    print(f" f = {f}")
 
 
 def ten():
-    import turtle
     tw = turtle.Screen()
     t = turtle.Turtle()
     for i in range(10):
