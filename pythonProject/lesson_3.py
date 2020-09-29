@@ -1,5 +1,6 @@
 import math
 import random
+import matplotlib.pyplot as plt
 
 
 def two():
@@ -80,6 +81,11 @@ def seven():
         y_lst.append(0.5*num+2.5)
     print(x_lst)
     print(y_lst)
+    plt.xlim([-10, 10])
+    plt.ylim([-10, 10])
+    plt.grid()
+    plt.plot(x_lst, y_lst, '-r')
+    plt.show()
 
 
 def eight():
@@ -96,6 +102,8 @@ def eight():
         if distance == min_distance:
             point = i
     print(f"({x_randoms[point]},{y_randoms[point]}), distance = {min_distance}")
+    plt.scatter(x_randoms, y_randoms)
+    plt.show()
 
 
 def nine():
@@ -114,6 +122,9 @@ def nine():
         if distance == min_distance:
             point = i
     print(f"({x_randoms[point]},{y_randoms[point]},{z_randoms[point]}), distance = {min_distance}")
+    ax = plt.axes(projection='3d')
+    ax.scatter3D(x_randoms, y_randoms, z_randoms)
+    plt.show()
 
 
 if __name__ == '__main__':
