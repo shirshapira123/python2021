@@ -59,13 +59,16 @@ def five():
 
 
 def six():
-    female = []
+    female = {}
     name = input("enter name: ")
     sex_type = input("enter your sex type:")
     female_counter = 0
+    i = 0
     while name != 'exit':
+        female[i] = name
+        female[name] = sex_type
+        i += 1
         if sex_type == 'F':
-            female.append(name)
             female_counter += 1
         name = input("enter name: ")
         sex_type = input("enter your sex type:")
@@ -128,4 +131,4 @@ def nine():
 
 
 if __name__ == '__main__':
-    nine()
+    six()
